@@ -35,7 +35,7 @@ export GST_PLUGIN_PATH=$GST_PLUGIN_PATH:$PWD/venv/lib/gstreamer-1.0/:$PWD/gst/
 
 Afterwards, the model should work. See the logs in the terminal using this command:
 ```GST_DEBUG=python:5 \
-gst-launch-1.0 filesrc location=data/videos/trailer.mp4 ! decodebin ! videoconvert !  gst_tf_detection config=data/tf_object_api_cfg.yml ! videoconvert ! fakesink ```
+gst-launch-1.0 filesrc location=data/videos/trailer.mp4 ! decodebin ! videoconvert !  gst_tf_detection config=data/tf_object_api_cfg.yml ! videoconvert ! fakesink```
 
 See the results in the video using this one:
 ```./run_example.sh```
