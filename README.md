@@ -1,6 +1,6 @@
 # Install xquartz
 
-```brew install -cask xquartz```
+```brew install --cask xquartz```
 
 # Configure xquartz
 
