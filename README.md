@@ -8,7 +8,7 @@ From the XQuartz preferences, in the security tab, make sure Allow connections f
 
 In a terminal on the host, run ```xhost +localhost```
 
-Run ```defaults write org.macosforge.xquartz.X11 enable_iglx -bool true```
+Run ```defaults write org.xquartz.X11 enable_iglx -bool true```
 
 Restart xquartz and log out and back in again.
 
