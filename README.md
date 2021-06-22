@@ -14,7 +14,9 @@ Restart xquartz and log out and back in again.
 
 # Building the dockerfile
 
-```docker build -t gstreamer-python:ubuntu-18 . ```           
+When doing so, provide a link to download the desired model from, and supply it for the arguement ```model_link```. You can find a list of models at https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/tf1_detection_zoo.md#coco-trained-models\
+
+```docker build --build-arg model_link=http://download.tensorflow.org/models/object_detection/ssdlite_mobilenet_v2_coco_2018_05_09.tar.gz -t gstreamer-python:ubuntu-18 .```           
 
 # Create the image
 
