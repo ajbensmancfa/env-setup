@@ -10,6 +10,8 @@ In a terminal on the host, run ```xhost +localhost```
 
 Run ```defaults write org.xquartz.X11 enable_iglx -bool true```
 
+Now do ```export DISPLAY=:0.0```
+
 Restart xquartz and log out and back in again.
 
 # Building the dockerfile
